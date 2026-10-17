@@ -45,6 +45,8 @@
     });
     if (!group) return;
 
+    group.querySelector(":scope > .shared-badge")?.remove();
+
     const title = group.querySelector(".block-title");
     if (title && title.textContent !== "6-4 苹果与鸿蒙用户：iPhone 两种订阅方式任选，鸿蒙走 MuMu") title.textContent = "6-4 苹果与鸿蒙用户：iPhone 两种订阅方式任选，鸿蒙走 MuMu";
 
